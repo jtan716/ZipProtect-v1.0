@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6521D6629EE0F1500FE9D4C /* ZipProtectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6521D6529EE0F1500FE9D4C /* ZipProtectApp.swift */; };
+		F6521D6829EE0F1500FE9D4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6521D6729EE0F1500FE9D4C /* ContentView.swift */; };
+		F6521D6A29EE0F1600FE9D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6521D6929EE0F1600FE9D4C /* Assets.xcassets */; };
+		F6521D6D29EE0F1600FE9D4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6521D6C29EE0F1600FE9D4C /* Preview Assets.xcassets */; };
+		F6521D7829EE0F1600FE9D4C /* ZipProtectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6521D7729EE0F1600FE9D4C /* ZipProtectTests.swift */; };
+		F6521D8229EE0F1600FE9D4C /* ZipProtectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6521D8129EE0F1600FE9D4C /* ZipProtectUITests.swift */; };
+		F6521D8429EE0F1600FE9D4C /* ZipProtectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6521D8329EE0F1600FE9D4C /* ZipProtectUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6521D7429EE0F1600FE9D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6521D5A29EE0F1500FE9D4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6521D6129EE0F1500FE9D4C;
+			remoteInfo = ZipProtect;
+		};
+		F6521D7E29EE0F1600FE9D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6521D5A29EE0F1500FE9D4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6521D6129EE0F1500FE9D4C;
+			remoteInfo = ZipProtect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F6521D6229EE0F1500FE9D4C /* ZipProtect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZipProtect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6521D6529EE0F1500FE9D4C /* ZipProtectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipProtectApp.swift; sourceTree = "<group>"; };
+		F6521D6729EE0F1500FE9D4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F6521D6929EE0F1600FE9D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6521D6C29EE0F1600FE9D4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6521D6E29EE0F1600FE9D4C /* ZipProtect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZipProtect.entitlements; sourceTree = "<group>"; };
+		F6521D7329EE0F1600FE9D4C /* ZipProtectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipProtectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6521D7729EE0F1600FE9D4C /* ZipProtectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipProtectTests.swift; sourceTree = "<group>"; };
+		F6521D7D29EE0F1600FE9D4C /* ZipProtectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipProtectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6521D8129EE0F1600FE9D4C /* ZipProtectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipProtectUITests.swift; sourceTree = "<group>"; };
+		F6521D8329EE0F1600FE9D4C /* ZipProtectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipProtectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6521D5F29EE0F1500FE9D4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6521D7029EE0F1600FE9D4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6521D7A29EE0F1600FE9D4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6521D5929EE0F1500FE9D4C = {
+			isa = PBXGroup;
+			children = (
+				F6521D6429EE0F1500FE9D4C /* ZipProtect */,
+				F6521D7629EE0F1600FE9D4C /* ZipProtectTests */,
+				F6521D8029EE0F1600FE9D4C /* ZipProtectUITests */,
+				F6521D6329EE0F1500FE9D4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6521D6329EE0F1500FE9D4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6521D6229EE0F1500FE9D4C /* ZipProtect.app */,
+				F6521D7329EE0F1600FE9D4C /* ZipProtectTests.xctest */,
+				F6521D7D29EE0F1600FE9D4C /* ZipProtectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6521D6429EE0F1500FE9D4C /* ZipProtect */ = {
+			isa = PBXGroup;
+			children = (
+				F6521D6529EE0F1500FE9D4C /* ZipProtectApp.swift */,
+				F6521D6729EE0F1500FE9D4C /* ContentView.swift */,
+				F6521D6929EE0F1600FE9D4C /* Assets.xcassets */,
+				F6521D6E29EE0F1600FE9D4C /* ZipProtect.entitlements */,
+				F6521D6B29EE0F1600FE9D4C /* Preview Content */,
+			);
+			path = ZipProtect;
+			sourceTree = "<group>";
+		};
+		F6521D6B29EE0F1600FE9D4C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F6521D6C29EE0F1600FE9D4C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6521D7629EE0F1600FE9D4C /* ZipProtectTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6521D7729EE0F1600FE9D4C /* ZipProtectTests.swift */,
+			);
+			path = ZipProtectTests;
+			sourceTree = "<group>";
+		};
+		F6521D8029EE0F1600FE9D4C /* ZipProtectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F6521D8129EE0F1600FE9D4C /* ZipProtectUITests.swift */,
+				F6521D8329EE0F1600FE9D4C /* ZipProtectUITestsLaunchTests.swift */,
+			);
+			path = ZipProtectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6521D6129EE0F1500FE9D4C /* ZipProtect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6521D8729EE0F1600FE9D4C /* Build configuration list for PBXNativeTarget "ZipProtect" */;
+			buildPhases = (
+				F6521D5E29EE0F1500FE9D4C /* Sources */,
+				F6521D5F29EE0F1500FE9D4C /* Frameworks */,
+				F6521D6029EE0F1500FE9D4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZipProtect;
+			productName = ZipProtect;
+			productReference = F6521D6229EE0F1500FE9D4C /* ZipProtect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6521D7229EE0F1600FE9D4C /* ZipProtectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6521D8A29EE0F1600FE9D4C /* Build configuration list for PBXNativeTarget "ZipProtectTests" */;
+			buildPhases = (
+				F6521D6F29EE0F1600FE9D4C /* Sources */,
+				F6521D7029EE0F1600FE9D4C /* Frameworks */,
+				F6521D7129EE0F1600FE9D4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6521D7529EE0F1600FE9D4C /* PBXTargetDependency */,
+			);
+			name = ZipProtectTests;
+			productName = ZipProtectTests;
+			productReference = F6521D7329EE0F1600FE9D4C /* ZipProtectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F6521D7C29EE0F1600FE9D4C /* ZipProtectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6521D8D29EE0F1600FE9D4C /* Build configuration list for PBXNativeTarget "ZipProtectUITests" */;
+			buildPhases = (
+				F6521D7929EE0F1600FE9D4C /* Sources */,
+				F6521D7A29EE0F1600FE9D4C /* Frameworks */,
+				F6521D7B29EE0F1600FE9D4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6521D7F29EE0F1600FE9D4C /* PBXTargetDependency */,
+			);
+			name = ZipProtectUITests;
+			productName = ZipProtectUITests;
+			productReference = F6521D7D29EE0F1600FE9D4C /* ZipProtectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6521D5A29EE0F1500FE9D4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					F6521D6129EE0F1500FE9D4C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					F6521D7229EE0F1600FE9D4C = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = F6521D6129EE0F1500FE9D4C;
+					};
+					F6521D7C29EE0F1600FE9D4C = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = F6521D6129EE0F1500FE9D4C;
+					};
+				};
+			};
+			buildConfigurationList = F6521D5D29EE0F1500FE9D4C /* Build configuration list for PBXProject "ZipProtect" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6521D5929EE0F1500FE9D4C;
+			productRefGroup = F6521D6329EE0F1500FE9D4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6521D6129EE0F1500FE9D4C /* ZipProtect */,
+				F6521D7229EE0F1600FE9D4C /* ZipProtectTests */,
+				F6521D7C29EE0F1600FE9D4C /* ZipProtectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6521D6029EE0F1500FE9D4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6521D6D29EE0F1600FE9D4C /* Preview Assets.xcassets in Resources */,
+				F6521D6A29EE0F1600FE9D4C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6521D7129EE0F1600FE9D4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6521D7B29EE0F1600FE9D4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6521D5E29EE0F1500FE9D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6521D6829EE0F1500FE9D4C /* ContentView.swift in Sources */,
+				F6521D6629EE0F1500FE9D4C /* ZipProtectApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6521D6F29EE0F1600FE9D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6521D7829EE0F1600FE9D4C /* ZipProtectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6521D7929EE0F1600FE9D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6521D8429EE0F1600FE9D4C /* ZipProtectUITestsLaunchTests.swift in Sources */,
+				F6521D8229EE0F1600FE9D4C /* ZipProtectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6521D7529EE0F1600FE9D4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6521D6129EE0F1500FE9D4C /* ZipProtect */;
+			targetProxy = F6521D7429EE0F1600FE9D4C /* PBXContainerItemProxy */;
+		};
+		F6521D7F29EE0F1600FE9D4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6521D6129EE0F1500FE9D4C /* ZipProtect */;
+			targetProxy = F6521D7E29EE0F1600FE9D4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F6521D8529EE0F1600FE9D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6521D8629EE0F1600FE9D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F6521D8829EE0F1600FE9D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZipProtect/ZipProtect.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZipProtect/Preview Content\"";
+				DEVELOPMENT_TEAM = 3G8D44J8F3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jeremytan.ZipProtect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F6521D8929EE0F1600FE9D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZipProtect/ZipProtect.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZipProtect/Preview Content\"";
+				DEVELOPMENT_TEAM = 3G8D44J8F3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jeremytan.ZipProtect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F6521D8B29EE0F1600FE9D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3G8D44J8F3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jeremytan.ZipProtectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZipProtect.app/Contents/MacOS/ZipProtect";
+			};
+			name = Debug;
+		};
+		F6521D8C29EE0F1600FE9D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3G8D44J8F3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jeremytan.ZipProtectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZipProtect.app/Contents/MacOS/ZipProtect";
+			};
+			name = Release;
+		};
+		F6521D8E29EE0F1600FE9D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3G8D44J8F3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jeremytan.ZipProtectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ZipProtect;
+			};
+			name = Debug;
+		};
+		F6521D8F29EE0F1600FE9D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3G8D44J8F3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jeremytan.ZipProtectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ZipProtect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6521D5D29EE0F1500FE9D4C /* Build configuration list for PBXProject "ZipProtect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6521D8529EE0F1600FE9D4C /* Debug */,
+				F6521D8629EE0F1600FE9D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6521D8729EE0F1600FE9D4C /* Build configuration list for PBXNativeTarget "ZipProtect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6521D8829EE0F1600FE9D4C /* Debug */,
+				F6521D8929EE0F1600FE9D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6521D8A29EE0F1600FE9D4C /* Build configuration list for PBXNativeTarget "ZipProtectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6521D8B29EE0F1600FE9D4C /* Debug */,
+				F6521D8C29EE0F1600FE9D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6521D8D29EE0F1600FE9D4C /* Build configuration list for PBXNativeTarget "ZipProtectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6521D8E29EE0F1600FE9D4C /* Debug */,
+				F6521D8F29EE0F1600FE9D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6521D5A29EE0F1500FE9D4C /* Project object */;
+}
