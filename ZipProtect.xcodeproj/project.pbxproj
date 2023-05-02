@@ -14,6 +14,8 @@
 		F6521D7829EE0F1600FE9D4C /* ZipProtectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6521D7729EE0F1600FE9D4C /* ZipProtectTests.swift */; };
 		F6521D8229EE0F1600FE9D4C /* ZipProtectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6521D8129EE0F1600FE9D4C /* ZipProtectUITests.swift */; };
 		F6521D8429EE0F1600FE9D4C /* ZipProtectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6521D8329EE0F1600FE9D4C /* ZipProtectUITestsLaunchTests.swift */; };
+		F6AACE5E2A0086BB002A78DC /* ZipFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AACE5D2A0086BB002A78DC /* ZipFolder.swift */; };
+		F6AACE602A0086E5002A78DC /* ZipController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AACE5F2A0086E5002A78DC /* ZipController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		F6521D7D29EE0F1600FE9D4C /* ZipProtectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipProtectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6521D8129EE0F1600FE9D4C /* ZipProtectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipProtectUITests.swift; sourceTree = "<group>"; };
 		F6521D8329EE0F1600FE9D4C /* ZipProtectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipProtectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F6AACE5D2A0086BB002A78DC /* ZipFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipFolder.swift; sourceTree = "<group>"; };
+		F6AACE5F2A0086E5002A78DC /* ZipController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				F6521D6529EE0F1500FE9D4C /* ZipProtectApp.swift */,
+				F6AACE5D2A0086BB002A78DC /* ZipFolder.swift */,
+				F6AACE5F2A0086E5002A78DC /* ZipController.swift */,
 				F6521D6729EE0F1500FE9D4C /* ContentView.swift */,
 				F6521D6929EE0F1600FE9D4C /* Assets.xcassets */,
 				F6521D6E29EE0F1600FE9D4C /* ZipProtect.entitlements */,
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AACE5E2A0086BB002A78DC /* ZipFolder.swift in Sources */,
+				F6AACE602A0086E5002A78DC /* ZipController.swift in Sources */,
 				F6521D6829EE0F1500FE9D4C /* ContentView.swift in Sources */,
 				F6521D6629EE0F1500FE9D4C /* ZipProtectApp.swift in Sources */,
 			);

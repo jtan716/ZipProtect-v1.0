@@ -8,17 +8,15 @@ import SwiftUI
 import Foundation
 
 struct ContentView: View {
-    @State private var fileUrls: [URL] = []
-    @State private var selectedFileName: String = ""
-    @State private var selectedDestinationFolder: String = ""
-    @State private var nameOfZipFile : String = ""
-    @State private var enteredPassword : String = ""
-    @State private var progressValue: Double = 0.0
-    @State private var isCancelled: Bool = false
-
-    @State private var errorMessages: [String] = []
+    
+    @State private var zipController : ZipController
+    
+    public init(zipController: ZipController = ZipController()) {
+        self.zipController = zipController
+    }
 
     var body: some View {
+        
         ScrollView {
             VStack(spacing: 20) {
                 Text("Choose file or folder to zip and password protect")
@@ -26,100 +24,38 @@ struct ContentView: View {
                 
                 HStack(spacing: 40) {
                     Button("Select Folder") {
-                        let openPanel = NSOpenPanel()
-                        openPanel.canChooseFiles = false // Only select folders
-                        openPanel.canChooseDirectories = true
-                        openPanel.allowsMultipleSelection = true
-                        openPanel.showsHiddenFiles = false
-                        openPanel.allowedFileTypes = ["public.folder"] // Only allow folders
-                        
-                        if openPanel.runModal() == NSApplication.ModalResponse.OK {
-                            fileUrls = openPanel.urls
-                            selectedFileName = ""
-                            for url in fileUrls {
-                                let fileName = url.deletingPathExtension().lastPathComponent
-                                if selectedFileName.isEmpty {
-                                    selectedFileName = fileName
-                                } else {
-                                    selectedFileName += ", \(fileName)"
-                                }
+                        zipController.selectFolder()
+                        if !zipController.zipFolder.selectedFileName.isEmpty {
+                            if let lastUrl = zipController.zipFolder.fileUrls.last {
+                                zipController.zipFolder.selectedFileName = lastUrl.lastPathComponent
+                    
                             }
                         }
                     }
                     .frame(alignment: .leading)
                     
                     Button("Select Destination") {
-                        let openPanel = NSOpenPanel()
-                        openPanel.canChooseFiles = false
-                        openPanel.canChooseDirectories = true
-                        openPanel.allowsMultipleSelection = false
-                        
-                        if openPanel.runModal() == NSApplication.ModalResponse.OK {
-                            let selectedUrl = openPanel.url
-                            selectedDestinationFolder = selectedUrl?.lastPathComponent ?? ""
-                            // do something with the selectedUrl, e.g. store it in a variable
-                        }
+                        zipController.selectDestination()
                     }
 
                 }
 
-                Text("Selected Folder: " + (selectedFileName.isEmpty ? "None" : selectedFileName))
+                Text("Selected Folder: " + (zipController.zipFolder.selectedFileName.isEmpty ? "None" : zipController.zipFolder.selectedFileName))
                     .frame(alignment: .leading)
                 
-                Text("Destination: " + (selectedDestinationFolder.isEmpty ? "None" : selectedDestinationFolder))
+                Text("Destination: " + (zipController.zipFolder.selectedDestinationFolder.isEmpty ? "None" : zipController.zipFolder.selectedDestinationFolder))
                 
-                TextField("Name your zip folder", text: $nameOfZipFile)
+                TextField("Name your zip folder", text: $zipController.zipFolder.nameOfZipFile)
                     .frame(alignment: .leading)
 
-                TextField("Enter a Password", text: $enteredPassword)
+                TextField("Enter a Password", text: $zipController.zipFolder.enteredPassword)
                     .frame(alignment: .leading)
                 
                 Button("Create Password Protected Zip File") {
-                    errorMessages.removeAll()
-                    
-                    if fileUrls.isEmpty { errorMessages.append("Please select a file or folder to zip.") }
-                    if selectedFileName.isEmpty { errorMessages.append("Selected file(s) is empty.") }
-                    if selectedDestinationFolder.isEmpty { errorMessages.append("Please select a destination folder.") }
-                    if nameOfZipFile.isEmpty { errorMessages.append("Please provide a name for the zip folder.") }
-                    if enteredPassword.isEmpty { errorMessages.append("Please enter a password.") }
-
-
-                    
-                    if !errorMessages.isEmpty {
-                        let errorMessage = errorMessages.joined(separator: "\n")
-                        let alert = NSAlert()
-                        alert.messageText = "Error"
-                        alert.informativeText = errorMessage
-                        alert.runModal()
-                    }
-                    else {
-                        progressValue = 0
-                                let task = Process()
-                                task.launchPath = "/usr/bin/zip"
-                                task.arguments = ["-r", "-P", enteredPassword, "\(selectedDestinationFolder)/\(nameOfZipFile).zip"] + fileUrls.map({ $0.path + "/\($0.lastPathComponent)" })
-                                let pipe = Pipe()
-                                task.standardOutput = pipe
-                                let outHandle = pipe.fileHandleForReading
-                                outHandle.waitForDataInBackgroundAndNotify()
-                                var obs1 : NSObjectProtocol!
-                                obs1 = NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outHandle, queue: nil) {  notification -> Void in
-                                    let data = outHandle.availableData
-                                    if data.count > 0 {
-                                        let str = String(data: data, encoding: String.Encoding.utf8)!
-                                        progressValue += 0.1 // increase the progress by 0.1 for each notification received
-                                        print(str)
-                                        outHandle.waitForDataInBackgroundAndNotify()
-                                    } else {
-                                        NotificationCenter.default.removeObserver(obs1!)
-                                    }
-                                }
-                                task.launch()
-
-
-                    }
+                    zipController.createZipFolder()
                 }
 
-                ProgressView(value: progressValue)
+                ProgressView(value: zipController.progressValue)
             }
         }
         .frame(

@@ -11,7 +11,7 @@ import SwiftUI
 struct ZipProtectApp: App {
     var body: some Scene {
         WindowGroup<ContentView> {
-            ContentView()
+            ContentView(zipController: ZipController())
         }
     }
 }
